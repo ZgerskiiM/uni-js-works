@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа по JavaScript</title>
+</head>
+<body>
+    <h1>Добро пожаловать в мир JavaScript!</h1>
+    <section>
+        <p id="page-text">Случайный текст на странице</p>
+        <button id="alert-button">Вывести сообщение в консоль</button>
+        <button id="text-button">Изменить текст</button>
+    </section>
+    <section>
+        <div id="button-counter-number">0</div>
+        <button id="counter-button">Нажмите для увеличения счетчика</button>
+    </section>
+    <section>
+        <input
+        id="alert-form"
+        type="text"
+        name="txt"
+        >
+        <button id="input-alert-button">Нажми чтобы вывести текст из формы</button>
+    </section>
+    <section>
+        <div id="timer-element">5</div>
+    </section>
+    <section>
+        <p>Картинка</p>
+        <img
+        id="img-transform"
+        src="https://avatars.githubusercontent.com/u/99950344?s=40&v=4">
+    </section>
+    <section>
+        <p>Введите день недели:</p>
+        <input type="text" id="day-input" placeholder="Например, понедельник">
+        <button onclick="checkDay()">Проверить</button>
+        <p id="result"></p>
+    </section>
+    <section>
+        <input type="number" id="num1" placeholder="Введите первое число">
+        <select id="operation">
+            <option value="add">Сложение</option>
+            <option value="subtract">Вычитание</option>
+            <option value="multiply">Умножение</option>
+            <option value="divide">Деление</option>
+        </select>
+        <input type="number" id="num2" placeholder="Введите второе число">
+        <button onclick="calculate()">Рассчитать</button>
+        <div class="result" id="result"></div>
+    </section>
+    <script src="main.js" defer></script>
+</body>
+</html>
