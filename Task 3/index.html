@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<section>
+    <button style="background-color: #FF6347;" onclick="changeBackgroundColor('#FF6347')">Красный</button>
+    <button style="background-color: #4682B4;" onclick="changeBackgroundColor('#4682B4')">Синий</button>
+    <button style="background-color: #32CD32;" onclick="changeBackgroundColor('#32CD32')">Зелёный</button>
+</section>
+<section>
+    <button onclick="addListItem()">Добавить элемент в список</button>
+    <ul id="item-list">
+    </ul>
+</section>
+<section>
+    <div class="input-container">
+        <input type="text" id="text-input" placeholder="Введите текст">
+        <button onclick="addParagraph()">Добавить параграф</button>
+    </div>
+
+    <div class="paragraph-container" id="paragraph-container">
+    </div>
+</section>
+<section>
+    <form id="dataForm">
+        <input type="text" id="name" placeholder="Введите имя" required>
+        <input type="number" id="age" placeholder="Введите возраст" required>
+        <button type="submit">Добавить</button>
+    </form>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Возраст</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</section>
+<section>
+    <ul id="item-list">
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+        <li>Элемент 3</li>
+        <li>Элемент 4</li>
+    </ul>
+</section>
+<section>
+    <div class="image-container">
+        <img src="image1_a.jpg" alt="Image 1" id="image1">
+        <img src="image2_a.jpg" alt="Image 2" id="image2">
+        <img src="image3_a.jpg" alt="Image 3" id="image3">
+    </div>
+</section>
+<section>
+    <div class="calculator">
+        <input type="number" id="number1" placeholder="Число 1">
+        <input type="number" id="number2" placeholder="Число 2">
+        <br>
+        <button onclick="calculate('add')">+</button>
+        <button onclick="calculate('subtract')">−</button>
+        <button onclick="calculate('multiply')">×</button>
+        <button onclick="calculate('divide')">÷</button>
+        <div id="result">Результат: </div>
+    </div>
+</section>
+<section>
+    <div class="counter-container">
+        <div id="click-count">0</div>
+        <button onclick="incrementCounter()">Кликни меня!</button>
+    </div>
+</section>
+</body>
+<script src="main.js"></script>
+</html>
